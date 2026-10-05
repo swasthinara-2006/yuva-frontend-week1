@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yuva Frontend Web Developer Internship – Week 1 Task: Transforming Wireframes into Static Web Pages. Built with clean HTML5, CSS3, and Vanilla JavaScript.">
+    <meta name="author" content="Yuva Frontend Intern">
+    <title>Yuva Frontend Internship - Wireframe to Static Web Page</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header" id="header">
+        <div class="container navbar">
+            <a href="#hero" class="logo" aria-label="Yuva Frontend Home">
+                <span class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                </span>
+                <span class="logo-text">Yuva<span class="gradient-text">Dev</span></span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+                </div>
+            </nav>
+
+            <!-- Mobile Hamburger Icon -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        Yuva Internship Week 1 • Frontend Task
+                    </div>
+                    <h1 class="hero-title">
+                        Transforming Wireframes Into <span class="gradient-text">Static Web Pages</span>
+                    </h1>
+                    <p class="hero-description">
+                        A pixel-perfect, fully responsive, and accessible static web application crafted using pure HTML5, modern CSS3 layout systems (Grid & Flexbox), and clean Vanilla JavaScript.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary btn-lg">
+                            Explore Showcase
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#features" class="btn btn-outline btn-lg">View Features</a>
+                    </div>
+                    
+                    <!-- Metric Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Mobile Responsive</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">HTML5</span>
+                            <span class="stat-label">Semantic Markup</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">CSS3</span>
+                            <span class="stat-label">Grid & Flexbox</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">⚡ 0 Dep</span>
+                            <span class="stat-label">Vanilla Stack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Media -->
+                <div class="hero-visual">
+                    <div class="glass-card mockup-wrapper">
+                        <img src="images/hero-mockup.jpg" alt="Static Web Page Wireframe Preview Mockup" class="hero-img" loading="eager">
+                        <div class="floating-badge badge-top">
+                            <span class="icon">✨</span>
+                            <span>WCAG Compliant</span>
+                        </div>
+                        <div class="floating-badge badge-bottom">
+                            <span class="icon">📱</span>
+                            <span>Zero Horizontal Scroll</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section class="features section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Core Capabilities</span>
+                    <h2 class="section-title">Engineered For Frontend Excellence</h2>
+                    <p class="section-description">
+                        Designed strictly following the internship requirements: clean semantic HTML5, modular CSS architecture, responsive breakpoints, and accessibility.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Semantic HTML5 Markup</h3>
+                        <p class="feature-text">
+                            Structured using standard semantic tags (`header`, `nav`, `main`, `section`, `article`, `footer`) for optimal SEO and screen reader navigation.
+                        </p>
+                        <ul class="feature-list">
+                            <li>W3C Standard Compliance</li>
+                            <li>Structured Heading Hierarchy</li>
+                        </ul>
+                    </article>
+
+                    <!-- Feature Card 2 -->
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Flexbox & Grid Layouts</h3>
+                        <p class="feature-text">
+                            Modern CSS layout engines provide seamless content alignment, equal height cards, and adaptive multi-column grids without heavy frameworks.
+                        </p>
+                        <ul class="feature-list">
+                            <li>CSS Grid Auto-fit columns</li>
+                            <li>Flexbox Alignment & Spacing</li>
+                        </ul>
+                    </article>
+
+                    <!-- Feature Card 3 -->
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">100% Mobile Responsive</h3>
+                        <p class="feature-text">
+                            Fluid design system that scales smoothly from 320px mobile screens to 4K ultra-wide desktop monitors with zero horizontal overflow.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Touch-friendly Mobile Menu</li>
+                            <li>Fluid Typography Scaling</li>
+                        </ul>
+                    </article>
+
+                    <!-- Feature Card 4 -->
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Dynamic Theme Switcher</h3>
+                        <p class="feature-text">
+                            Built-in Light and Dark theme toggle using CSS Custom Properties (variables) and stored user preference in `localStorage`.
+                        </p>
+                        <ul class="feature-list">
+                            <li>CSS Variables Token System</li>
+                            <li>Instant Theme Transition</li>
+                        </ul>
+                    </article>
+
+                    <!-- Feature Card 5 -->
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Accessibility & UX</h3>
+                        <p class="feature-text">
+                            Ensures AA contrast ratios, clear keyboard focus rings, expressive ARIA labels, and readable typography for all users.
+                        </p>
+                        <ul class="feature-list">
+                            <li>High Contrast Ratios</li>
+                            <li>Focus Outline Styling</li>
+                        </ul>
+                    </article>
+
+                    <!-- Feature Card 6 -->
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Zero Dependency Footprint</h3>
+                        <p class="feature-text">
+                            No Bootstrap, Tailwind, or bulky JavaScript bundles. Lightweight native static code guaranteed to load in under a second.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Fast GitHub Pages Deploy</li>
+                            <li>Clean & Readable Codebase</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SHOWCASE SECTION -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Wireframe Showcase</span>
+                    <h2 class="section-title">Projects & Wireframe Conversion</h2>
+                    <p class="section-description">
+                        Explore our interactive portfolio cards demonstrating how abstract design concepts transform into responsive code.
+                    </p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="filter-bar" id="filterBar">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile UI</button>
+                    <button class="filter-btn" data-filter="design">Design Systems</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Project Item 1 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <img src="images/project-1.jpg" alt="Apex SaaS Analytics Dashboard Preview" class="project-img" loading="lazy">
+                            <span class="project-tag">Web App</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Apex Analytics Dashboard</h3>
+                            <p class="project-text">
+                                High-performance SaaS wireframe converted into a responsive dashboard page with custom metric cards and clean data presentation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS Grid</span>
+                                <span class="tech-badge">Flexbox</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="#contact" class="project-link">
+                                    Live Preview
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Item 2 -->
+                    <article class="project-card" data-category="mobile">
+                        <div class="project-img-wrapper">
+                            <img src="images/project-2.jpg" alt="Nova Mobile App UI Preview" class="project-img" loading="lazy">
+                            <span class="project-tag">Mobile UI</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Nova Fitness Tracker App</h3>
+                            <p class="project-text">
+                                Mobile-first UI wireframe layout optimized for touch navigation, drawer menus, and adaptive smartphone screens.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Mobile First</span>
+                                <span class="tech-badge">Vanilla JS</span>
+                                <span class="tech-badge">CSS Animation</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="#contact" class="project-link">
+                                    Live Preview
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Item 3 -->
+                    <article class="project-card" data-category="design">
+                        <div class="project-img-wrapper">
+                            <img src="images/hero-mockup.jpg" alt="Yuva Component Library Wireframe" class="project-img" loading="lazy">
+                            <span class="project-tag">Design System</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Yuva Modular UI System</h3>
+                            <p class="project-text">
+                                Comprehensive CSS design system with customized typography, buttons, glassmorphic cards, and reusable variables.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">CSS Variables</span>
+                                <span class="tech-badge">Design Tokens</span>
+                                <span class="tech-badge">Glassmorphism</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="#contact" class="project-link">
+                                    Live Preview
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section class="pricing section" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Flexible Options</span>
+                    <h2 class="section-title">Transparent Tiered Pricing</h2>
+                    <p class="section-description">
+                        Structured pricing wireframe conversion with billing toggles and distinct feature highlight tiers.
+                    </p>
+                </div>
+
+                <!-- Billing Toggle -->
+                <div class="pricing-toggle-wrapper">
+                    <span class="pricing-label active" id="monthlyLabel">Monthly Billing</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="billingToggle" aria-label="Toggle annual pricing discount">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span class="pricing-label" id="annualLabel">
+                        Annual Billing 
+                        <span class="discount-pill">Save 20%</span>
+                    </span>
+                </div>
+
+                <!-- Pricing Cards Grid -->
+                <div class="pricing-grid">
+                    <!-- Pricing Card 1 -->
+                    <article class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Starter Plan</h3>
+                            <p class="plan-desc">For small frontend projects & basic landing pages.</p>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount" data-monthly="19" data-annual="15">19</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="check">✓</span> 3 Static HTML Pages</li>
+                            <li><span class="check">✓</span> 100% Mobile Responsive</li>
+                            <li><span class="check">✓</span> Basic CSS Styling</li>
+                            <li class="disabled"><span class="cross">✕</span> Dynamic Dark Theme</li>
+                            <li class="disabled"><span class="cross">✕</span> Priority Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline btn-full">Choose Starter</a>
+                    </article>
+
+                    <!-- Pricing Card 2 (Popular Highlight) -->
+                    <article class="pricing-card popular">
+                        <div class="popular-badge">Most Popular Wireframe</div>
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Professional</h3>
+                            <p class="plan-desc">Perfect for full agency websites & internship portfolios.</p>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount" data-monthly="49" data-annual="39">49</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="check">✓</span> Unlimited Static Pages</li>
+                            <li><span class="check">✓</span> 100% Mobile & Tablet Responsive</li>
+                            <li><span class="check">✓</span> CSS Variables & Theme Toggle</li>
+                            <li><span class="check">✓</span> Accessible Form Validation</li>
+                            <li><span class="check">✓</span> GitHub Pages Deploy Guide</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary btn-full">Get Started Now</a>
+                    </article>
+
+                    <!-- Pricing Card 3 -->
+                    <article class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Enterprise</h3>
+                            <p class="plan-desc">Custom enterprise solutions with advanced UI systems.</p>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount" data-monthly="99" data-annual="79">99</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="check">✓</span> Everything in Professional</li>
+                            <li><span class="check">✓</span> Full Custom Design Tokens</li>
+                            <li><span class="check">✓</span> 1-on-1 Code Review</li>
+                            <li><span class="check">✓</span> Performance Optimization</li>
+                            <li><span class="check">✓</span> 24/7 Priority Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline btn-full">Contact Enterprise</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="faq section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Got Questions?</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-description">
+                        Everything you need to know about the Yuva Frontend Web Developer Internship Week 1 submission.
+                    </p>
+                </div>
+
+                <div class="faq-list">
+                    <details class="faq-item" open>
+                        <summary class="faq-question">
+                            <span>What are the main requirements for the Week 1 Task?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                The task requires converting a wireframe into a static web page using clean semantic HTML5, well-structured CSS3 (Flexbox/Grid), and minimal JavaScript without relying on external frameworks like Bootstrap or Tailwind.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Is the web page responsive on all devices?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Yes, the project is tested for mobile (phones), tablets, laptops, and desktop viewports. Media queries ensure text remains legible and layout elements stack gracefully with zero horizontal scroll bar overflow.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>How do I run and deploy this project?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Simply open `index.html` in any web browser or host it via GitHub Pages by committing the repository and enabling GitHub Pages from the repository settings menu.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>How is accessibility handled in this static page?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                We use standard semantic tags (`header`, `nav`, `main`, `section`, `footer`), high contrast text colors, descriptive image `alt` text, visible keyboard focus indicators, and custom ARIA labels.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact & Internship Submission</h2>
+                    <p class="section-description">
+                        Fill out the form below to test the functional contact interface and form validation.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information Card -->
+                    <div class="contact-info-card">
+                        <h3 class="info-title">Contact Information</h3>
+                        <p class="info-text">
+                            Reach out if you have feedback or questions regarding this frontend wireframe conversion project.
+                        </p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p>internship@yuva.edu / developer@yuva.dev</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Project Track</h4>
+                                    <p>Yuva Web Developer Internship • Week 1</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Response Time</h4>
+                                    <p>Under 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div id="formAlert" class="form-alert" hidden></div>
+
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" class="form-control" placeholder="John Doe" required>
+                            <span class="error-message" id="nameError">Please enter your full name.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emailAddress">Email Address <span class="required">*</span></label>
+                            <input type="email" id="emailAddress" name="emailAddress" class="form-control" placeholder="john@example.com" required>
+                            <span class="error-message" id="emailError">Please enter a valid email address.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Project Subject</label>
+                            <select id="subject" name="subject" class="form-control">
+                                <option value="internship">Yuva Internship Submission</option>
+                                <option value="feedback">Wireframe Design Feedback</option>
+                                <option value="inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="4" class="form-control" placeholder="Write your message here..." required></textarea>
+                            <span class="error-message" id="messageError">Please enter your message.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span>Send Message</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo">
+                        <span class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </span>
+                        <span class="logo-text">Yuva<span class="gradient-text">Dev</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Yuva Frontend Web Developer Internship – Week 1 Task submission. Converting wireframes into clean, accessible, static web pages.
+                    </p>
+                </div>
+
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-links">
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 class="footer-title">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="README.md" target="_blank">Documentation</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tech Stack</h4>
+                        <ul class="footer-links">
+                            <li><span>Semantic HTML5</span></li>
+                            <li><span>CSS3 Flexbox & Grid</span></li>
+                            <li><span>CSS Variables</span></li>
+                            <li><span>Vanilla JavaScript</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Yuva Frontend Internship. All rights reserved.</p>
+                <button class="back-to-top" id="backToTop" aria-label="Back to top of page">
+                    Back to top ↑
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
